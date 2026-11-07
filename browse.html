@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNook | Browse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">BookNook</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="browse.html" class="active">Browse</a>
+        <a href="top-picks.html">Top Picks</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Browse Books</h2>
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search by title or author...">
+      <select id="genre">
+        <option value="all">All Genres</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Self-Help">Self-Help</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+      </select>
+    </div>
+    <p id="noResults" class="hidden">No books found.</p>
+    <div class="grid" id="bookGrid"></div>
+  </main>
+
+  <footer><p>&copy; 2026 BookNook. Made for my Web Dev mini project.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
